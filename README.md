@@ -83,9 +83,6 @@ print(answer)
 │     └── inference_utils.py - this file contain helper functions for the inference function
 ```
 
-# Contributing
-
-
 
 # Acknowledgments
 Please refer to AUTHORS.
