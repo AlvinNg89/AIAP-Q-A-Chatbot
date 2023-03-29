@@ -1,0 +1,25 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "commitConvention": "angular",
+  "contributors": [
+    {
+      "login": "caffeinatedwoof",
+      "name": "caffeinatedwoof",
+      "avatar_url": "https://avatars.githubusercontent.com/u/20638685?v=4",
+      "profile": "https://github.com/caffeinatedwoof",
+      "contributions": [
+        "data"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "skipCi": true,
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "projectName": "AIAP-RAG-Chatbot",
+  "projectOwner": "AlvinNg89"
+}
