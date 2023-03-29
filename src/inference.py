@@ -3,14 +3,19 @@ from src.utils.convert_custom_csv import csv_to_dataset
 import torch
 
 
-def ask_question(question, custom_csv=False, csv_path=None, output_dir=None):
+def ask_question(
+    question, tuned_model=None, custom_csv=False, csv_path=None, output_dir=None
+):
     tokenizer = get_tokenizer()
     if custom_csv:
         dataset = csv_to_dataset(csv_path, output_dir)
         retriever = get_retriever(dataset=dataset)
     else:
         retriever = get_retriever()
-    model = get_model(retriever)
+    if tuned_model:
+        model = tuned_model
+    else:
+        model = get_model(retriever)
     input_ids = tokenizer.question_encoder(question, return_tensors="pt")["input_ids"]
     generated = model.generate(input_ids)
     generated_string = tokenizer.batch_decode(generated, skip_special_tokens=True)[0]
