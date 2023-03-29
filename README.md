@@ -36,7 +36,7 @@ dataset = convert_to_dataset(csv_path, output_dir_path)
 ```python
 from src.inference import ask_question
 # inference
-question = 'How much is the allowance of AIAP?'
+question = 'How much is AIAP allowance?'
 answer = ask_question(question)
 print(answer)
 ```
@@ -49,7 +49,7 @@ training_data_path = './training_data'
 tuned_model = finetune_rag_generator(training_data_path)
 
 # inference with tuned model
-question = 'What if I decided to drop out of AIAP?'
+question = 'What if I decide to drop out of AIAP?'
 answer = ask_question(question, tuned_model=tuned_model)
 print(answer)
 ```
