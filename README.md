@@ -16,8 +16,6 @@ Paper: https://arxiv.org/abs/2005.11401
 # Table Of Contents
 -  [In a Nutshell](#in-a-nutshell)
 -  [In Details](#in-details)
--  [Future Work](#future-work)
--  [Contributing](#contributing)
 -  [Acknowledgments](#acknowledgments)
 
 # In a Nutshell   
