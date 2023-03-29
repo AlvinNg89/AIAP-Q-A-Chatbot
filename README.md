@@ -1,9 +1,10 @@
 # AIAP RAG Chatbot
-This repo is for AI Singapore's AIAP Batch 12 Group Presentation Topic: "Transfer Learning in NLP". In this repo, we try to create a custom chatbot using pretrained models. The model we use is the RAG model 
+This repo is for AI Singapore's AIAP Batch 12 Group Presentation Topic: "Transfer Learning in NLP". 
 
-**So, here’s a simple pytorch template that help you get into your main project faster and just focus on your core (Model Architecture, Training Flow, etc)**
+In this repo, we attempt to create a custom chatbot using pretrained models. The model we use is the RAG model.
 
-In order to decrease repeated stuff, we recommend to use a high-level library. You can write your own high-level library or you can just use some third-part libraries such as [ignite](https://github.com/pytorch/ignite), [fastai](https://github.com/fastai/fastai), [mmcv](https://github.com/open-mmlab/mmcv) … etc. This can help you write compact but full-featured training loops in a few lines of code. Here we use ignite to train mnist as an example.
+Paper: https://arxiv.org/abs/2005.11401
+
 
 # Requirements
 - [Transformers](https://github.com/huggingface/transformers) (HuggingFace Transformers Library)
