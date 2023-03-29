@@ -21,7 +21,7 @@ Paper: https://arxiv.org/abs/2005.11401
 -  [Acknowledgments](#acknowledgments)
 
 # In a Nutshell   
-In a nutshell here's how to use this template, so assuming you want to implement an Open Domain Question Answering (ODQA) chatbot using a pretrained RAG model and your own custom dataset.
+In a nutshell here's how to use this repo, so assuming you want to implement an Open Domain Question Answering (ODQA) chatbot using a pretrained RAG model and your own custom dataset.
 - Provide your custom dataset in a CSV format with each line containing the 'title' and 'text' of the dataset, tab delimited. Convert this csv file into the required Dataset format by calling the `convert_to_dataset` function from `convert_custom_csv.py` in the `utils` folder found in `src` folder.
 
 ```python
@@ -43,7 +43,7 @@ answer = ask_question(question)
 print(answer)
 ```
 
-- If you would like to fine-tune the model, you will need provide two files for training purpose. The first file should be named train.source and should contain questions in each newline. The second file should be named train.target and contains the answer (ground truth) for each corresponding question in train.source. From the `finetune.py` file in the `utils` folder, import `finetune_rag_generator` function
+- If you would like to fine-tune the model, you will need to provide two files for training purpose. The first file should be named train.source and should contain questions in each newline. The second file should be named train.target and contains the answer (ground truth) for each corresponding question in train.source. From the `finetune.py` file in the `utils` folder, import `finetune_rag_generator` function
 ```python
 from src.utils.finetune import finetune_rag_generator
 # finetune model
