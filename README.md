@@ -19,7 +19,7 @@ Paper: https://arxiv.org/abs/2005.11401
 -  [Acknowledgments](#acknowledgments)
 
 # In a Nutshell   
-In a nutshell here's how to use this repo, so assuming you want to implement an Open Domain Question Answering (ODQA) chatbot using a pretrained RAG model and your own custom dataset.
+In a nutshell here's how to use this repo, assuming you want to implement an Open Domain Question Answering (ODQA) chatbot using a pretrained RAG model and your own custom dataset.
 - Provide your custom dataset in a CSV format with each line containing the 'title' and 'text' of the dataset, tab delimited. Convert this csv file into the required Dataset format by calling the `convert_to_dataset` function from `convert_custom_csv.py` in the `utils` folder found in `src` folder.
 
 ```python
@@ -73,13 +73,24 @@ print(answer)
 │    └── training.target  - training set containing answers to training.source
 │
 │
+├──  notebooks
+│   ├── aisg_faq_scrape.ipynb  - notebook on scraping AISG faq
+│   ├── data_cleaning.ipynb  - notebook on cleaning scraped data
+│   └── data_augmentation.ipynb  - notebook on augmenting scraped data
+│
+│
+├──  scraped_data
+│   ├── augmented_data.csv  - csv file of augmented scraped data
+│   └── scraped_data.csv  - csv file of scraped data
+│
+│  
 ├──  src
-│   ├── finetune.py     - this file contains the tuner for the 
-│   ├── inference.py   - this file contains the inference process.
+│   ├── finetune.py  - this file contains the tuner for the 
+│   ├── inference.py  - this file contains the inference process.
 │   └── utils
-│     ├── convert_custom_csv.py - this file contains the converter for custom csv file
-│     ├── finetune_utils.py - this file contain helper function for the finetune function
-│     └── inference_utils.py - this file contain helper functions for the inference function
+│     ├── convert_custom_csv.py  - this file contains the converter for custom csv file
+│     ├── finetune_utils.py  - this file contain helper function for the finetune function
+│     └── inference_utils.py  - this file contain helper functions for the inference function
 ```
 
 
