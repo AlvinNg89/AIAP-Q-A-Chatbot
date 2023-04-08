@@ -2,7 +2,6 @@ import logging
 import os
 from dataclasses import dataclass, field
 from functools import partial
-from pathlib import Path
 from typing import List, Optional
 
 import faiss

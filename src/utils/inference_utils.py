@@ -14,8 +14,8 @@ def get_retriever(dataset=None):
         )
 
     else:
-        dataset_path = "./training_data/my_knowledge_dataset"
-        index_path = "./training_data/my_knowledge_dataset_hnsw_index.faiss"
+        dataset_path = "./custom_dataset/my_knowledge_dataset"
+        index_path = "./custom_dataset/my_knowledge_dataset_hnsw_index.faiss"
         retriever = RagRetriever.from_pretrained(
             "facebook/rag-sequence-nq",
             index_name="custom",

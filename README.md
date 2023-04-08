@@ -41,7 +41,7 @@ answer = ask_question(question)
 print(answer)
 ```
 
-- If you would like to fine-tune the model, you will need to provide two files for training purpose. The first file should be named train.source and should contain questions in each newline. The second file should be named train.target and contains the answer (ground truth) for each corresponding question in train.source. From the `finetune.py` file in the `utils` folder, import `finetune_rag_generator` function
+- If you would like to fine-tune the generator, you will need to provide two files in `training_data` folder for training purpose. The first file should be named train.source and should contain questions in each newline. The second file should be named train.target and contains the answer (ground truth) for each corresponding question in train.source. From the `finetune.py` file in the `utils` folder, import `finetune_rag_generator` function
 ```python
 from src.utils.finetune import finetune_rag_generator
 # finetune model
