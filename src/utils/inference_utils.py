@@ -1,4 +1,5 @@
 from transformers import RagTokenizer, RagRetriever, RagSequenceForGeneration
+import os
 
 
 def get_tokenizer():
